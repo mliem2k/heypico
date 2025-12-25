@@ -1,0 +1,18 @@
+services:
+  # Ollama - Local LLM runner
+  ollama:
+    image: ollama/ollama:latest
+    container_name: heypico-ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    environment:
+      - OLLAMA_ORIGINS=*
+    restart: unless-stopped
+    # For Apple Silicon, this runs natively
+    # For Intel/AMD, you may need GPU support
+
+volumes:
+  ollama_data:
+    driver: local

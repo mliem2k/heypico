@@ -132,6 +132,12 @@ heypico/
 └── README.md
 ```
 
+## Screenshots
+
+![Coffee near San Francisco](coffee_near_san_francisco.png)
+
+![Coffee near me](coffee_near_me.png)
+
 ## Map Embed Syntax in AI Responses
 
 The AI uses custom `<map>` tags that get rendered as embedded maps:
